@@ -62,8 +62,11 @@
 	&__logo {
 		font-size: 4rem;
 		color: $color-primary;
-		letter-spacing: 5px;
 		transition: all .3s;
+
+		& span {
+			letter-spacing: 5px;
+		}
 
 		&:hover {
 			color: $color-primary-light;
