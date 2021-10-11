@@ -1,0 +1,70 @@
+.trainers {
+	grid-column: 1 / 6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 7rem 0;
+	background-color: #fff;
+
+	&__list {
+		display: flex;
+		margin-top: 3rem;
+	}
+
+	&__box {
+		position: relative;
+		margin: 0 4rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $color-grey-dark-2;
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 16px, rgba(0, 0, 0, 0.4) 0px 8px 24px, rgba(0, 0, 0, 0.4) 0px 16px 56px;
+		&:hover .trainers__share {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&__share {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		display: flex;
+		flex-direction: column;
+		margin-top: .5rem;
+		margin-right: 1rem;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s;
+
+		& a {
+			display: block;
+			text-align: center;
+			width: 3.5rem;
+			height: 3.5rem;
+			background-color: $color-grey-light;
+			margin-top: 1rem;
+			color: $color-grey-dark-2;
+			font-size: 2rem;
+			border-radius: 50%;
+		}
+
+		& i {
+			vertical-align: middle;
+		}
+	}
+
+	&__img {
+		width: 25rem;
+		height: 35rem;
+		overflow: hidden;
+	}
+
+	&__name {
+		font-size: 2rem;
+		margin: 1rem 0;
+		text-transform: uppercase;
+		color: $color-grey-light;
+	}
+}

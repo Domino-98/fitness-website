@@ -41,16 +41,16 @@
 					</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link active">Strona główna</a>
+					<a href="#header" class="nav__link">Strona główna</a>
 				</li>
 				<li class=" nav__item">
-					<a href="#" class="nav__link">O nas</a>
+					<a href="#about" class="nav__link">O nas</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link">Trenerzy</a>
+					<a href="#trainers" class="nav__link">Trenerzy</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link">Plany</a>
+					<a href="#pricing" class="nav__link">Plany</a>
 				</li>
 				<li class="nav__item">
 					<a href="#" class="nav__link">Zarejestruj się</a>
@@ -58,7 +58,7 @@
 			</ul>
 		</nav>
 
-		<header class="header">
+		<header class="header" id="header">
 			<p class="header__quote">
 				<span>&ldquo;</span>Champions aren't born.<br>
 				They're made<span>&rdquo;</span>
@@ -68,10 +68,10 @@
 			</h1>
 		</header>
 
-		<section class="about">
+		<section class="about" id="about">
 			<img src="public/img/about_img.jpg" alt="" class="about__img">
 			<div class="about__text">
-				<h2 class="about__heading">O nas</h2>
+				<h2 class="heading-2">O nas</h2>
 				<p class="about__info">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus praesentium amet beatae qui
 					ducimus,
@@ -82,19 +82,40 @@
 			</div>
 		</section>
 
-		<section class="trainer">
-			<div class="trainer__one">
-
-			</div>
-			<div class="trainer__two">
-
-			</div>
-			<div class="trainer__three">
-
+		<section class="trainers" id="trainers">
+			<h2 class="heading-2">Trenerzy</h2>
+			<div class="trainers__list">
+				<div class="trainers__box">
+					<div class="trainers__share">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+					<img src="public/img/trainer1.jpg" class="trainers__img" alt="Personal Trainer 1">
+					<h3 class="trainers__name">John Doe</h3>
+				</div>
+				<div class="trainers__box">
+					<div class="trainers__share">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+					<img src="public/img/trainer2.jpg" class="trainers__img" alt="Personal Trainer 2">
+					<h3 class="trainers__name">John Doe</h3>
+				</div>
+				<div class="trainers__box">
+					<div class="trainers__share">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+					<img src="public/img/trainer3.jpg" class="trainers__img" alt="Personal Trainer 3">
+					<h3 class="trainers__name">John Doe</h3>
+				</div>
 			</div>
 		</section>
 
-		<section class="pricing">
+		<section class="pricing" id="pricing">
 			<div class="pricing__plan">
 
 			</div>
@@ -106,7 +127,7 @@
 			</div>
 		</section>
 
-		<div class="newsletter">
+		<div class="newsletter" id="newsletter">
 			<form action="" class="newsletter__form">
 
 			</form>
