@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -32,16 +33,8 @@ body {
   background-image: url(../../public/img/header_img.jpg);
   background-repeat: no-repeat;
   background-position: left;
-  background-size: cover; }
-  .header-img::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(3px);
-    /* apply the blur */
-    pointer-events: none;
-    /* make the overlay click-through */ }
+  background-size: cover;
+  filter: grayscale(100%); }
 
 .heading-2 {
   font-size: 3.5rem;
@@ -182,7 +175,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 7rem 0;
+  padding: 10rem 0;
   background-color: #fff; }
   .trainers__list {
     display: flex;
@@ -230,6 +223,94 @@ body {
     margin: 1rem 0;
     text-transform: uppercase;
     color: #eee; }
+
+.pricing {
+  grid-column: 1 / 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0; }
+  .pricing__list {
+    display: flex; }
+  .pricing__plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+    width: 32.5rem;
+    background-color: #fff;
+    margin-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .2s; }
+    .pricing__plan:hover {
+      transform: scale(1.035); }
+  .pricing__header {
+    height: 10rem;
+    padding: 2rem 0;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #bdbdbd;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
+    .pricing__header h3 {
+      font-weight: 400; }
+    .pricing__header.recommended {
+      background-color: #0077ff;
+      color: #eee; }
+  .pricing__price {
+    width: 100%;
+    margin-top: -2rem;
+    padding: 4rem 0 2rem;
+    background-color: #dfdfdf;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold; }
+    .pricing__price span {
+      font-weight: 400; }
+  .pricing__details {
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center; }
+    .pricing__details ul {
+      list-style-type: none;
+      font-size: 1.8rem; }
+    .pricing__details i {
+      font-size: 2rem;
+      margin-right: 1rem;
+      color: #0077ff; }
+      .pricing__details i.fa-times {
+        color: #ff3b3b; }
+    .pricing__details li {
+      padding: .75rem 0;
+      border: none;
+      transition: background-color .5s ease-out, border-left .3s; }
+      .pricing__details li:hover {
+        background-color: #dfdfdf;
+        border-left: 4px solid #0077ff; }
+  .pricing__btn-box {
+    margin-bottom: 2.5rem; }
+  .pricing__btn {
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid #0077ff;
+    border-radius: 25px;
+    background: transparent;
+    color: #0077ff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 2rem;
+    transition: all .2s; }
+    .pricing__btn.recommended {
+      background-color: #0077ff;
+      color: #eee; }
+    .pricing__btn:hover {
+      background-color: #0077ff;
+      color: #eee; }
 
 .footer__item {
   list-style-type: none; }

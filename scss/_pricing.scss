@@ -1,3 +1,128 @@
 .pricing {
+	grid-column: 1 / 6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10rem 0;
 
+	&__list {
+		display: flex;
+	}
+
+	&__plan {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 2rem;
+		width: 32.5rem;
+		background-color: #fff;
+		margin-top: 3rem;
+		font-family: 'Montserrat', sans-serif;
+		transition: all .2s;
+
+		&:hover {
+			transform: scale(1.035);
+		}
+	}
+
+	&__header {
+		height: 10rem;
+		padding: 2rem 0;
+		font-size: 2rem;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: #bdbdbd;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+		& h3 {
+			font-weight: 400;
+		}
+
+		&.recommended {
+			background-color: $color-primary;
+			color: $color-grey-light;
+		}
+	}
+
+	&__price {
+		width: 100%;
+		margin-top: -2rem;
+		padding: 4rem 0 2rem;
+		background-color: #dfdfdf;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: bold;
+
+		& span {
+			font-weight: 400;
+		}
+	}
+
+	&__details {
+		padding: 2rem 0;
+		width: 100%;
+		text-align: center;
+
+		&:before {
+
+		}
+
+		& ul {
+			list-style-type: none;
+			font-size: 1.8rem;
+		}
+
+		& i {
+			font-size: 2rem;
+			margin-right: 1rem;
+			color: $color-primary;
+
+			&.fa-times {
+				color: #ff3b3b;
+			}
+		}
+
+		& li {
+			padding: .75rem 0;
+			border: none;
+			transition: background-color .5s ease-out, border-left .3s;
+
+			&:hover {
+				background-color: #dfdfdf;
+				border-left: 4px solid $color-primary;
+			}
+		}
+	}
+
+	&__btn-box {
+		margin-bottom: 2.5rem;
+	}
+
+	&__btn {
+		padding: 1rem 2rem;
+		outline: none;
+		border: 2px solid $color-primary;
+		border-radius: 25px;
+		background: transparent;
+		color: $color-primary;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-size: 2rem;
+		transition: all .2s;
+
+		&.recommended {
+			background-color: $color-primary;
+			color: $color-grey-light;
+		}
+
+		&:hover {
+			background-color: $color-primary;
+			color: $color-grey-light;
+		}
+	}
 }
