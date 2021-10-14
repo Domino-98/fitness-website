@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
 		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>BFIT Gyms</title>
 </head>
 
@@ -43,7 +44,7 @@
 				<li class="nav__item">
 					<a href="#header" class="nav__link">Strona główna</a>
 				</li>
-				<li class=" nav__item">
+				<li class="nav__item">
 					<a href="#about" class="nav__link">O nas</a>
 				</li>
 				<li class="nav__item">
@@ -59,18 +60,20 @@
 		</nav>
 
 		<header class="header" id="header">
-			<p class="header__quote">
+			<p class="header__quote" data-aos="fade-right">
 				<span>&ldquo;</span>Champions aren't born.<br>
 				They're made<span>&rdquo;</span>
 			</p>
-			<h1 class="header__logo">
-				<a href="#pricing">Zakup Karnet</a>
-			</h1>
+			<div data-aos="fade-up" data-aos-delay="1500">
+				<h1 class="header__logo">
+					<a href="#pricing">Zakup Karnet</a>
+				</h1>
+			</div>
 		</header>
 
 		<section class="about" id="about">
-			<img src="public/img/about_img.jpg" alt="" class="about__img">
-			<div class="about__text">
+			<img src="public/img/about_img.jpg" alt="" class="about__img" data-aos="fade-in">
+			<div class="about__text" data-aos="fade-left">
 				<h2 class="heading-2">O nas</h2>
 				<p class="about__info">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus praesentium amet beatae qui
@@ -83,9 +86,9 @@
 		</section>
 
 		<section class="trainers" id="trainers">
-			<h2 class="heading-2">Trenerzy</h2>
+			<h2 class="heading-2" data-aos="fade-down" data-aos-delay="0">Trenerzy</h2>
 			<div class="trainers__list">
-				<div class="trainers__box">
+				<div class="trainers__box" data-aos="fade-up" data-aos-delay="250">
 					<div class="trainers__share">
 						<a href="#"><i class="fab fa-facebook-f"></i></a>
 						<a href="#"><i class="fab fa-twitter"></i></a>
@@ -94,7 +97,7 @@
 					<img src="public/img/trainer1.jpg" class="trainers__img" alt="Personal Trainer 1">
 					<h3 class="trainers__name">John Doe</h3>
 				</div>
-				<div class="trainers__box">
+				<div class="trainers__box" data-aos="fade-up" data-aos-delay="500">
 					<div class="trainers__share">
 						<a href="#"><i class="fab fa-facebook-f"></i></a>
 						<a href="#"><i class="fab fa-twitter"></i></a>
@@ -103,7 +106,7 @@
 					<img src="public/img/trainer2.jpg" class="trainers__img" alt="Personal Trainer 2">
 					<h3 class="trainers__name">John Doe</h3>
 				</div>
-				<div class="trainers__box">
+				<div class="trainers__box" data-aos="fade-up" data-aos-delay="750">
 					<div class="trainers__share">
 						<a href="#"><i class="fab fa-facebook-f"></i></a>
 						<a href="#"><i class="fab fa-twitter"></i></a>
@@ -116,80 +119,85 @@
 		</section>
 
 		<section class="pricing" id="pricing">
-			<h2 class="heading-2">Karnety</h2>
+			<h2 class="heading-2" data-aos="fade-down" data-aos-delay="0">Karnety</h2>
 			<div class="pricing__list">
-				<div class="pricing__plan">
-					<div class="pricing__header">
-						<h3>W. jednorazowe</h3>
-					</div>
-					<div class="pricing__price">
-						<p>15 ZŁ</p>
-					</div>
-					<div class="pricing__details">
-						<ul>
-							<li><i class="fas fa-check"></i>Strefa ciężarów</li>
+				<div data-aos="fade-right">
+					<div class="pricing__plan">
+						<div class="pricing__header">
+							<h3>W. jednorazowe</h3>
+						</div>
+						<div class="pricing__price">
+							<p>15 ZŁ</p>
+						</div>
+						<div class="pricing__details">
+							<ul>
+								<li><i class="fas fa-check"></i>Strefa ciężarów</li>
 
-							<li><i class="fas fa-check"></i>Strefa cardio</li>
+								<li><i class="fas fa-check"></i>Strefa cardio</li>
 
-							<li><i class="fas fa-check"></i>Strefa cross</li>
+								<li><i class="fas fa-check"></i>Strefa cross</li>
 
-							<li><i class="fas fa-times"></i>Trening personalny</li>
+								<li><i class="fas fa-times"></i>Trening personalny</li>
 
-							<li><i class="fas fa-times"></i>Shake: Białko/Gainer</li>
-						</ul>
-					</div>
-					<div class="pricing__btn-box">
-						<button class="pricing__btn">Kup Teraz</button>
-					</div>
-				</div>
-				<div class="pricing__plan recommended">
-					<div class="pricing__header recommended">
-						<h3>Standard</h3>
-					</div>
-					<div class="pricing__price">
-						<p>99 ZŁ<span>/1 Miesiąc</span></p>
-					</div>
-					<div class="pricing__details">
-						<ul>
-
-							<li><i class="fas fa-check"></i>Strefa ciężarów</li>
-
-							<li><i class="fas fa-check"></i>Strefa cardio</li>
-
-							<li><i class="fas fa-check"></i>Strefa cross</li>
-
-							<li><i class="fas fa-times"></i>Trening personalny</li>
-
-							<li><i class="fas fa-times"></i>Shake: Białko/Gainer</li>
-						</ul>
-					</div>
-					<div class="pricing__btn-box">
-						<button class="pricing__btn recommended">Kup Teraz</button>
+								<li><i class="fas fa-times"></i>Shake: Białko/Gainer</li>
+							</ul>
+						</div>
+						<div class="pricing__btn-box">
+							<button class="pricing__btn">Kup Teraz</button>
+						</div>
 					</div>
 				</div>
-				<div class="pricing__plan">
-					<div class="pricing__header">
-						<h3>Premium</h3>
+				<div data-aos="fade-up">
+					<div class="pricing__plan recommended">
+						<div class="pricing__header recommended">
+							<h3>Standard</h3>
+						</div>
+						<div class="pricing__price">
+							<p>99 ZŁ<span>/1 Miesiąc</span></p>
+						</div>
+						<div class="pricing__details">
+							<ul>
+								<li><i class="fas fa-check"></i>Strefa ciężarów</li>
+
+								<li><i class="fas fa-check"></i>Strefa cardio</li>
+
+								<li><i class="fas fa-check"></i>Strefa cross</li>
+
+								<li><i class="fas fa-times"></i>Trening personalny</li>
+
+								<li><i class="fas fa-times"></i>Shake: Białko/Gainer</li>
+							</ul>
+						</div>
+						<div class="pricing__btn-box">
+							<button class="pricing__btn recommended">Kup Teraz</button>
+						</div>
 					</div>
-					<div class="pricing__price">
-						<p>149 ZŁ<span>/1 Miesiąc</span></p>
-					</div>
-					<div class="pricing__details">
-						<ul>
+				</div>
+				<div data-aos="fade-left">
+					<div class="pricing__plan">
+						<div class="pricing__header">
+							<h3>Premium</h3>
+						</div>
+						<div class="pricing__price">
+							<p>149 ZŁ<span>/1 Miesiąc</span></p>
+						</div>
+						<div class="pricing__details">
+							<ul>
 
-							<li><i class="fas fa-check"></i>Strefa ciężarów</li>
+								<li><i class="fas fa-check"></i>Strefa ciężarów</li>
 
-							<li><i class="fas fa-check"></i>Strefa cardio</li>
+								<li><i class="fas fa-check"></i>Strefa cardio</li>
 
-							<li><i class="fas fa-check"></i>Strefa cross</li>
+								<li><i class="fas fa-check"></i>Strefa cross</li>
 
-							<li><i class="fas fa-check"></i>Trening personalny</li>
+								<li><i class="fas fa-check"></i>Trening personalny</li>
 
-							<li><i class="fas fa-check"></i>Shake: Białko/Gainer</li>
-						</ul>
-					</div>
-					<div class="pricing__btn-box">
-						<button class="pricing__btn">Kup Teraz</button>
+								<li><i class="fas fa-check"></i>Shake: Białko/Gainer</li>
+							</ul>
+						</div>
+						<div class="pricing__btn-box">
+							<button class="pricing__btn">Kup Teraz</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -232,6 +240,9 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="public/js/animate.js"></script>
 
 </body>
 
