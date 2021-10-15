@@ -42,7 +42,7 @@
 					</a>
 				</li>
 				<li class="nav__item">
-					<a href="#header" class="nav__link">Strona główna</a>
+					<a href="#" class="nav__link">Strona główna</a>
 				</li>
 				<li class="nav__item">
 					<a href="#about" class="nav__link">O nas</a>
@@ -54,12 +54,15 @@
 					<a href="#pricing" class="nav__link">Karnety</a>
 				</li>
 				<li class="nav__item">
+					<a href="#contact" class="nav__link">Kontakt</a>
+				</li>
+				<li class="nav__item">
 					<a href="#" class="nav__link">Zarejestruj się</a>
 				</li>
 			</ul>
 		</nav>
 
-		<header class="header" id="header">
+		<header class="header">
 			<p class="header__quote" data-aos="fade-right">
 				<span>&ldquo;</span>Champions aren't born.<br>
 				They're made<span>&rdquo;</span>
@@ -203,11 +206,19 @@
 			</div>
 		</section>
 
-		<div class="newsletter" id="newsletter">
-			<form action="" class="newsletter__form">
-
-			</form>
-		</div>
+		<section class="contact" id="contact">
+			<h2 class="heading-2" data-aos="fade-down">Skontaktuj się z nami</h2>
+			<div class="contact__box">
+				<form action="" class="contact__form" data-aos="fade-right" data-aos-delay="500">
+					<input type="text" placeholder="Nazwa" class="contact__form-input" required>
+					<input type="email" placeholder="Email" class="contact__form-input" required>
+					<textarea placeholder="Wiadomość" class="contact__form-input" rows="5" required></textarea>
+					<button class="contact__btn">Wyślij</button>
+				</form>
+				<img src="public/img/contact_img.jpg" alt="" class="contact__img" data-aos="fade-left"
+					data-aos-delay="1500">
+			</div>
+		</section>
 
 		<footer class="footer">
 			<ul class="footer__list">

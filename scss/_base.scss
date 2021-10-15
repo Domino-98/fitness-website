@@ -3,8 +3,7 @@
 
 // Color Variables
 $color-primary: #0077ff;
-$color-primary-light: #77b7ff;
-$color-secondary: #000;
+$color-primary-light: #65c1ff;
 
 $color-grey-light: #eee;
 $color-grey-dark: #ccc;
@@ -35,7 +34,7 @@ body {
 .container {
 	display: grid;
 	grid-template-columns: 25rem 1fr 1fr 1fr 25rem;
-	grid-template-rows: 10vh 90vh repeat(4, min-content);
+	grid-template-rows: 10vh 90vh repeat(5, min-content);
 	overflow-x: hidden;
 }
 
