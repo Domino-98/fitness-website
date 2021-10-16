@@ -42,17 +42,22 @@ body {
 	grid-column: 1 / 6;
 	grid-row: 1 / 3;
 	z-index: -1;
-
 	background-image: url(../../public/img/header_img.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: cover;
-	filter:grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .heading-2 {
 	font-size: 3.5rem;
 	margin-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.heading-3 {
+	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }

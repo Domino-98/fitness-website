@@ -1,5 +1,87 @@
 .footer {
+	grid-column: 1 / 6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6rem 0;
+	background-color: #000;
+	border-top: 5px solid $color-primary;
+	position: relative;
 
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $color-grey-light;
+		width: 100%;
+		margin: 0 5rem;
+	}
+
+	&__logo {
+		color: $color-primary;
+		font-size: 3rem;
+		letter-spacing: 5px;
+	}
+
+	&__copyright {
+		font-size: 2rem;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin: 0 1rem;
+
+		& i {
+			font-size: 3.5rem;
+			transition: all .5s;
+
+			&:hover {
+				color: $color-primary-light;
+			}
+		}
+	}
+
+	&__link {
+		color: $color-grey-light;
+		font-size: 2rem;
+	}
+
+	&__info {
+		position: absolute;
+		top: -40%;
+		text-align: center;
+		background-color: $color-grey-dark;
+		padding: 1rem 4rem;
+		box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 1rem;
+			font-weight: 700;
+
+			& i {
+				font-size: 4rem;
+			}
+		}
+
+		&-hours {
+			margin: .5rem 1.5rem;
+			font-size: 1.4rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__list {
+		padding: 1rem 2rem;
+	}
 
 	&__item {
 		list-style-type: none;

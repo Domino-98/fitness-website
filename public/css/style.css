@@ -42,14 +42,18 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
+.heading-3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
 .nav {
   grid-column: 1 / 6;
   grid-row: 1 / 1;
-  z-index: 10;
+  z-index: 100;
   background-color: #000;
   position: fixed;
-  width: 100%;
-  box-shadow: 0 2px 7px -2px rgba(201, 201, 201, 0.5); }
+  width: 100%; }
   .nav__list {
     display: flex;
     align-items: center; }
@@ -318,7 +322,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10rem 0;
+  padding-top: 10rem;
+  padding-bottom: 17.5rem;
   background-color: #fff; }
   .contact__box {
     display: flex;
@@ -392,7 +397,66 @@ body {
         width: 100%; }
   .contact__img {
     width: 100%;
-    margin-left: 50%; }
+    margin-left: 50%;
+    filter: contrast(1.1); }
 
-.footer__item {
-  list-style-type: none; }
+.footer {
+  grid-column: 1 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0;
+  background-color: #000;
+  border-top: 5px solid #0077ff;
+  position: relative; }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
+    width: 100%;
+    margin: 0 5rem; }
+  .footer__logo {
+    color: #0077ff;
+    font-size: 3rem;
+    letter-spacing: 5px; }
+  .footer__copyright {
+    font-size: 2rem; }
+  .footer__list {
+    display: flex; }
+  .footer__item {
+    margin: 0 1rem; }
+    .footer__item i {
+      font-size: 3.5rem;
+      transition: all .5s; }
+      .footer__item i:hover {
+        color: #65c1ff; }
+  .footer__link {
+    color: #eee;
+    font-size: 2rem; }
+  .footer__info {
+    position: absolute;
+    top: -40%;
+    text-align: center;
+    background-color: #ccc;
+    padding: 1rem 4rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; }
+    .footer__info-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      font-weight: 700; }
+      .footer__info-wrapper i {
+        font-size: 4rem; }
+    .footer__info-hours {
+      margin: .5rem 1.5rem;
+      font-size: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .footer__list {
+    padding: 1rem 2rem; }
+  .footer__item {
+    list-style-type: none; }
