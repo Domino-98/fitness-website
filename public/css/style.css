@@ -49,7 +49,6 @@ body {
 
 .nav {
   grid-column: 1 / 6;
-  grid-row: 1 / 1;
   z-index: 100;
   background-color: #000;
   position: fixed;
@@ -62,7 +61,7 @@ body {
     list-style-type: none;
     font-size: 2.2rem;
     font-weight: 700;
-    transition: all .2s; }
+    transition: transform .2s; }
     .nav__item:first-child {
       margin-right: auto;
       margin-left: 3rem; }
@@ -73,7 +72,7 @@ body {
   .nav__link {
     text-decoration: none;
     color: #eee;
-    transition: all .3s; }
+    transition: all .5s; }
     .nav__link::after {
       transform: scaleX(0);
       height: 2px;
@@ -90,7 +89,7 @@ body {
   .nav__logo {
     font-size: 4rem;
     color: #0077ff;
-    transition: all .3s; }
+    transition: all .5s; }
     .nav__logo span {
       letter-spacing: 5px; }
     .nav__logo:hover {
