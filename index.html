@@ -247,49 +247,52 @@
 			<form class="modal__form" id="register-form">
 				<div class="modal__form-group">
 					<label for="name" class="modal__form-label">Nazwa</label>
-					<input type="text" name="name" id="name" class="modal__form-input" placeholder="Nazwa" autofocus>
-					<p class="error"></p>
+					<input type="text" name="name" id="name" class="modal__form-input register-input"
+						placeholder="Nazwa">
+					<p class="error-text"></p>
 				</div>
 				<div class="modal__form-group">
 					<label for="email" class="modal__form-label">Email</label>
-					<input type="email" name="email" id="email" class="modal__form-input" placeholder="Email">
-					<p class="error"></p>
+					<input type="email" name="email" id="email" class="modal__form-input register-input"
+						placeholder="Email">
+					<p class="error-text"></p>
 				</div>
 				<div class="modal__form-group">
 					<label for="password" class="modal__form-label">Hasło</label>
-					<input type="password" name="password" id="password" class="modal__form-input password"
-						placeholder="Hasło">
+					<input type="password" name="password" id="password"
+						class="modal__form-input password register-input" placeholder="Hasło">
+					<p class="error-text"></p>
 					<i class="fa fa-eye-slash show-pass" aria-hidden="true"></i>
-					<p class="error"></p>
 				</div>
 				<div class="modal__form-group tos">
-					<input type="checkbox" name="tos" id="tos">
-					<label for="tos" class="tos">Zgadzam się z <a href="#">Warunkami
+					<label for="tos" class="tos-label">Zgadzam się z <a href="#">Warunkami
 							użytkowania</a> i <a href="#">Polityką prywatności</a></label>
-					<p class="error"></p>
+					<input type="checkbox" name="tos" id="tos">
+					<p class="error-text"></p>
 				</div>
-				<button class="modal__form-submit">Zarejestruj się</button>
+				<button class="modal__form-submit" type="submit">Zarejestruj się</button>
 			</form>
 			<form class="modal__form hide-form" id="login-form">
 				<div class="modal__form-group">
-					<label for="email" class="modal__form-label">Email</label>
-					<input type="email" name="email" id="email" class="modal__form-input" placeholder="Email">
-					<p class="error"></p>
+					<label for="email2" class="modal__form-label">Email</label>
+					<input type="email" name="email2" id="email2" class="modal__form-input" placeholder="Email">
+					<p class="error-text"></p>
 				</div>
 				<div class="modal__form-group">
-					<label for="password" class="modal__form-label">Hasło</label>
-					<input type="password" name="password" id="password" class="modal__form-input password"
+					<label for="password2" class="modal__form-label">Hasło</label>
+					<input type="password" name="password2" id="password2" class="modal__form-input password"
 						placeholder="Hasło">
+					<p class="error-text"></p>
 					<i class="fa fa-eye-slash show-pass" aria-hidden="true"></i>
-					<p class="error"></p>
 				</div>
 				<a href="#" class="forgot-password">Zapomniałem hasła</a>
-				<button class="modal__form-submit">Zaloguj się</button>
+				<button class="modal__form-submit" type="submit">Zaloguj się</button>
 			</form>
 		</div>
 	</div>
 
-	<script src="public/js/modal.js"></script>
+	<script src="public/js/modal.js" -text></script>
+	<script src="public/js/validate.js"></script>
 	<script src="public/js/nav-shrink.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="public/js/animate.js"></script>

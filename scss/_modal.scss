@@ -10,7 +10,7 @@
 
 	&__content {
 		background-color: #fefefe;
-		margin: 10% auto;
+		margin: 8% auto;
 		padding: 0 0 2rem;
 		width: 100%;
 		max-width: 50rem;
@@ -113,6 +113,7 @@
 			color: #000;
 			font-size: 1.8rem;
 			outline: none;
+			border: 2px solid $color-grey-light;
 			transition: all .3s;
 
 			&:focus {
@@ -121,7 +122,7 @@
 		}
 
 		&-submit {
-			margin-top: 3rem;
+			margin-top: 2rem;
 			border: none;
 			padding: 1rem 2rem;
 			background-color: $color-primary;
@@ -168,11 +169,19 @@
 }
 
 .tos {
-	margin-left: .5rem;
+	&-label {
+		margin-left: 2.5rem;
+	}
 
 	& a:visited {
 		color: #0044ff;
 	}
+}
+
+#tos {
+	position: absolute;
+	left: .5rem;
+	top: .5rem;
 }
 
 input[type='checkbox'] {
@@ -186,10 +195,18 @@ input[type='checkbox'] {
 	font-size: 1.6rem;
 }
 
-.error {
+.error-text {
 	margin-top: .5rem;
 	font-size: 1.4rem;
-	color: red;
+	color: #ff3939;
+}
+
+.error {
+	border: 2px solid #ff5959;;
+}
+
+.success {
+	border: 2px solid #5bd9ff;
 }
 
 @keyframes zoomIn {

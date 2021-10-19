@@ -471,7 +471,7 @@ body {
   transition: visibility .3s linear, opacity .3s linear; }
   .modal__content {
     background-color: #fefefe;
-    margin: 10% auto;
+    margin: 8% auto;
     padding: 0 0 2rem;
     width: 100%;
     max-width: 50rem;
@@ -546,11 +546,12 @@ body {
       color: #000;
       font-size: 1.8rem;
       outline: none;
+      border: 2px solid #eee;
       transition: all .3s; }
       .modal__form-input:focus {
         background-color: #ccc; }
     .modal__form-submit {
-      margin-top: 3rem;
+      margin-top: 2rem;
       border: none;
       padding: 1rem 2rem;
       background-color: #0077ff;
@@ -586,10 +587,16 @@ body {
   color: #4d4d4d;
   cursor: pointer; }
 
-.tos {
-  margin-left: .5rem; }
-  .tos a:visited {
-    color: #0044ff; }
+.tos-label {
+  margin-left: 2.5rem; }
+
+.tos a:visited {
+  color: #0044ff; }
+
+#tos {
+  position: absolute;
+  left: .5rem;
+  top: .5rem; }
 
 input[type='checkbox'] {
   transform: scale(1.5); }
@@ -600,10 +607,16 @@ input[type='checkbox'] {
   text-decoration: none;
   font-size: 1.6rem; }
 
-.error {
+.error-text {
   margin-top: .5rem;
   font-size: 1.4rem;
-  color: red; }
+  color: #ff3939; }
+
+.error {
+  border: 2px solid #ff5959; }
+
+.success {
+  border: 2px solid #5bd9ff; }
 
 @keyframes zoomIn {
   0% {
