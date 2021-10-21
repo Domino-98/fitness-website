@@ -1,8 +1,13 @@
 {
-  "scripts" : {
-	"watch:sass": "node-sass scss/main.scss public/css/style.css -w"
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss public/css/style.css -w"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
     "node-sass": "^6.0.1"
   }
 }
