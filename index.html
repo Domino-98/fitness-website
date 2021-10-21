@@ -19,12 +19,12 @@
 		<div class="header-img"></div>
 
 		<nav class="nav">
+			<div class="nav__header">
+				<a href="#" class="nav__link">
+					<h3 class="nav__logo"><span>BFIT</span> Gyms</h3>
+				</a>
+			</div>
 			<ul class="nav__list">
-				<li class="nav__item">
-					<a href="#" class="nav__link">
-						<h3 class="nav__logo"><span>BFIT</span> Gyms</h3>
-					</a>
-				</li>
 				<li class="nav__item">
 					<a href="#" class="nav__link">Strona główna</a>
 				</li>
@@ -44,6 +44,11 @@
 					<a href="#" class="nav__link" id="regBtn">Rejestracja/Login</a>
 				</li>
 			</ul>
+			<div class="nav__hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
 		</nav>
 
 		<header class="header">
@@ -52,7 +57,7 @@
 				They're made<span>&rdquo;</span>
 			</p>
 			<div data-aos="fade-up" data-aos-delay="1500">
-				<h1 class="header__logo">
+				<h1 class="header__btn">
 					<a href="#pricing">Zakup Karnet</a>
 				</h1>
 			</div>
@@ -204,7 +209,7 @@
 			</div>
 		</section>
 
-		<footer class="footer" data-aos="fade-in" data-aos-delay="250">
+		<footer class="footer">
 			<div class="footer__info">
 				<h3 class="heading-3">Godziny otwarcia</h3>
 				<div class="footer__info-wrapper">
@@ -220,7 +225,7 @@
 				</div>
 			</div>
 			<div class="footer__wrapper">
-				<h2 class="footer__logo">BFIT Gyms</h2>
+				<h2 class="footer__logo"><span>BFIT</span> Gyms</h2>
 				<p class="footer__copyright">Copyright &copy; by Dominik Buczek</p>
 				<ul class="footer__list">
 					<li class="footer__item">
@@ -259,10 +264,10 @@
 				</div>
 				<div class="modal__form-group">
 					<label for="password" class="modal__form-label">Hasło</label>
-					<input type="password" name="password" id="password"
-						class="modal__form-input password register-input" placeholder="Hasło">
+					<input type="password" name="password" id="password1" class="modal__form-input register-input"
+						placeholder="Hasło">
 					<p class="error-text"></p>
-					<i class="fa fa-eye-slash show-pass" aria-hidden="true"></i>
+					<i class="fa fa-eye-slash show-pass-1" aria-hidden="true"></i>
 				</div>
 				<div class="modal__form-group tos">
 					<label for="tos" class="tos-label">Zgadzam się z <a href="#">Warunkami
@@ -280,10 +285,10 @@
 				</div>
 				<div class="modal__form-group">
 					<label for="password2" class="modal__form-label">Hasło</label>
-					<input type="password" name="password2" id="password2" class="modal__form-input password"
+					<input type="password" name="password2" id="password2" class="modal__form-input"
 						placeholder="Hasło">
 					<p class="error-text"></p>
-					<i class="fa fa-eye-slash show-pass" aria-hidden="true"></i>
+					<i class="fa fa-eye-slash show-pass-2" aria-hidden="true"></i>
 				</div>
 				<a href="#" class="forgot-password">Zapomniałem hasła</a>
 				<button class="modal__form-submit" type="submit">Zaloguj się</button>
@@ -293,7 +298,7 @@
 
 	<script src="public/js/modal.js" -text></script>
 	<script src="public/js/validate.js"></script>
-	<script src="public/js/nav-shrink.js"></script>
+	<script src="public/js/nav.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="public/js/animate.js"></script>
 

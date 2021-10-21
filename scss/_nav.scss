@@ -1,29 +1,77 @@
 .nav {
 	grid-column: 1 / 6;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 1.5rem 1.2rem;
 	z-index: 100;
 	background-color: #000;
-	position: fixed;
-	width: 100%;
+
+	&__header {
+		margin-left: 3rem;
+	}
+
+	&__hamburger {
+		display: none;
+
+		@media only screen and (max-width: $bp-large) {
+			display: block;
+			margin-right: 3rem;
+			cursor: pointer;
+
+			&.active .bar:nth-child(2) {
+				opacity: 0;
+			}
+
+			&.active .bar:nth-child(1) {
+				transform: translateY(9px) rotate(45deg);
+			}
+
+			&.active .bar:nth-child(3) {
+				transform: translateY(-9px) rotate(-45deg);
+			}
+		}
+	}
 
 	&__list {
 		display: flex;
 		align-items: center;
+
+		@media only screen and (max-width: $bp-large) {
+			position: fixed;
+			flex-direction: column;
+			left: -100%;
+			top: 7rem;
+			width: 100%;
+			background-color: #000;
+			text-align: center;
+			transition: 0.3s;
+
+			&.active {
+				left: 0;
+			}
+		}
 	}
 
 	&__item {
-		padding: 1.5rem 1.2rem;
+		margin: 0 1.2rem;
 		list-style-type: none;
 		font-size: 2.2rem;
 		font-weight: 700;
 		transition: transform .2s;
 
-		&:first-child {
-			margin-right: auto;
-			margin-left: 3rem;
-		}
-
 		&:last-child {
 			margin-right: 3rem;
+		}
+
+		@media only screen and (max-width: $bp-large) {
+			margin: 2rem 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 
 		&:hover:not(:first-child) {
@@ -37,9 +85,9 @@
 		transition: all .5s;
 
 		&::after {
+			display: block;
 			transform: scaleX(0);
 			height: 2px;
-			display: block;
 			background: $color-primary-light;
 			border-right: 1px white;
 			content: '';
@@ -69,4 +117,14 @@
 			color: $color-primary-light;
 		}
 	}
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6.5px auto;
+	z-index: 100;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
 }

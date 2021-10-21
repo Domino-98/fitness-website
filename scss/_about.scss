@@ -3,51 +3,64 @@
 	display: flex;
 	padding: 12rem 0;
 
+	@media only screen and (max-width: $bp-medium) {
+		grid-column: 1 / 6;
+		margin: 0 15rem;
+		padding: 7rem 0;
+	}
+
+	@media only screen and (max-width: $bp-small) {
+		margin: 0 5rem;
+	}
+
 	&__text {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-		font-size: 2.4rem;
 		padding-left: 5rem;
-	}
+		font-size: 2.4rem;
 
-	&__heading {
-		font-size: 4rem;
-		margin-bottom: 1rem;
-		text-transform: uppercase;
-		letter-spacing: 3px;
+		@media only screen and (max-width: $bp-large) {
+			padding-left: 0;
+			align-items: center;
+			text-align: justify;
+		}
 	}
 
 	&__img {
-		max-width:50%;
+		max-width: 50%;
+
+		@media only screen and (max-width: $bp-large) {
+			display: none;
+		}
 	}
 
 	&__btn {
-		margin-top: 3rem;
-		padding: 1.25rem 2.5rem;
-		font-size: 1.8rem;
-		cursor: pointer;
-		border: none;
-		box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-		background-color: $color-primary;
-		color: $color-grey-light;
-		border-radius: 5px;
 		position: relative;
 		width: 22rem;
+		margin-top: 3rem;
+		padding: 1.25rem 2.5rem;
+		border: none;
+		border-radius: 5px;
+		font-size: 1.8rem;
+		background-color: $color-primary;
+		color: $color-grey-light;
+		cursor: pointer;
+		box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 		transition: all .5s;
 
 		&::after {
 			content: '»';
 			position: absolute;
-			opacity: 0;
 			right: -20px;
+			opacity: 0;
 			transition: all .5s;
 		}
 
 		&:hover::after {
-			opacity: 1;
 			right: 15px;
+			opacity: 1;
 		}
 
 		&:hover {

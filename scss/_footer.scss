@@ -1,30 +1,50 @@
 .footer {
 	grid-column: 1 / 6;
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 6rem 0;
-	background-color: #000;
 	border-top: 5px solid $color-primary;
-	position: relative;
+	background-color: #000;
+
+	@media only screen and (max-width: $bp-medium) {
+		padding-top: 6rem;
+		padding-bottom: 3rem;
+	}
 
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		color: $color-grey-light;
 		width: 100%;
 		margin: 0 5rem;
+		color: $color-grey-light;
+
+		@media only screen and (max-width: $bp-medium) {
+			flex-direction: column;
+		}
 	}
 
 	&__logo {
 		color: $color-primary;
 		font-size: 3rem;
-		letter-spacing: 5px;
+
+		& span {
+			letter-spacing: 5px;
+		}
+
+		@media only screen and (max-width: $bp-medium) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	&__copyright {
 		font-size: 2rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	&__list {
@@ -52,10 +72,14 @@
 	&__info {
 		position: absolute;
 		top: -40%;
+		padding: 1rem 4rem;
 		text-align: center;
 		background-color: $color-grey-dark;
-		padding: 1rem 4rem;
 		box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+		@media only screen and (max-width: $bp-medium) {
+			top: -25%;
+		}
 
 		&-wrapper {
 			display: flex;
@@ -70,12 +94,12 @@
 		}
 
 		&-hours {
-			margin: .5rem 1.5rem;
-			font-size: 1.4rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			margin: .5rem 1.5rem;
+			font-size: 1.4rem;
 		}
 	}
 

@@ -6,20 +6,38 @@
 	justify-content: center;
 	padding: 10rem 0;
 
+
+	@media only screen and (max-width: $bp-medium) {
+		padding: 7rem 0;
+	}
+
 	&__list {
 		display: flex;
+
+		@media only screen and (max-width: $bp-medium) {
+			flex-direction: column;
+		}
 	}
 
 	&__plan {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 0 2rem;
 		width: 32.5rem;
-		background-color: #fff;
+		margin: 0 2rem;
 		margin-top: 3rem;
+		background-color: #fff;
 		font-family: 'Montserrat', sans-serif;
 		transition: all .2s;
+
+		@media only screen and (max-width: $bp-large) {
+			width: 27.5rem;
+		}
+
+		@media only screen and (max-width: $bp-medium) {
+			width: 35rem;
+			margin-top: 5rem;
+		}
 
 		&:hover {
 			transform: scale(1.035);
@@ -27,16 +45,16 @@
 	}
 
 	&__header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
 		height: 10rem;
 		padding: 2rem 0;
 		font-size: 2rem;
 		text-align: center;
 		text-transform: uppercase;
 		background-color: #bdbdbd;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 
 		& h3 {
@@ -68,18 +86,14 @@
 		width: 100%;
 		text-align: center;
 
-		&:before {
-
-		}
-
 		& ul {
 			list-style-type: none;
 			font-size: 1.8rem;
 		}
 
 		& i {
-			font-size: 2rem;
 			margin-right: 1rem;
+			font-size: 2rem;
 			color: $color-primary;
 
 			&.fa-times {
