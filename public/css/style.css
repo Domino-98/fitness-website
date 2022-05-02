@@ -25,15 +25,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 25rem 1fr 1fr 1fr 25rem;
-  grid-template-rows: 10vh 90vh repeat(5, min-content);
+  grid-template-rows: 10vh 90vh repeat(3, min-content) 1fr min-content;
   overflow-x: hidden; }
-  @media only screen and (max-width: 50em) {
-    .container {
-      grid-template-columns: 15rem 1fr 1fr 1fr 15rem; } }
-  @media only screen and (max-width: 50em) {
-    .container {
-      grid-template-columns: 5rem 1fr 1fr 1fr 5rem; } }
 
 .header-img {
   grid-column: 1 / 6;
@@ -536,17 +529,15 @@ body {
       .contact__btn:hover:before {
         width: 100%; }
   .contact__img {
-    width: 100%;
     margin-left: 50%;
     filter: contrast(1.1); }
     @media only screen and (max-width: 81.25em) {
       .contact__img {
-        width: 80%;
+        width: 57.5rem;
         margin-left: 40%; } }
     @media only screen and (max-width: 50em) {
       .contact__img {
         width: 50%;
-        margin-left: 40%;
         margin-top: 7.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .contact__img {

@@ -123,18 +123,16 @@
 	}
 
 	&__img {
-		width: 100%;
 		margin-left: 50%;
 		filter: contrast(1.1);
 
 		@media only screen and (max-width: $bp-largest) {
-			width: 80%;
+			width: 57.5rem;
 			margin-left: 40%;
 		}
 
 		@media only screen and (max-width: $bp-medium) {
 			width: 50%;
-			margin-left: 40%;
 			margin-top: 7.5rem;
 		}
 
